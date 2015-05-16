@@ -123,6 +123,7 @@
     <Compile Include="CathegoryProduct.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Shop.cs" />
     <Compile Include="ClientEditingForm.cs">
       <SubType>Form</SubType>
     </Compile>
