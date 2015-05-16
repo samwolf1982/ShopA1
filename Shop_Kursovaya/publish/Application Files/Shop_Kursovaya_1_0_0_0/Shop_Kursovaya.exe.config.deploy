@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Shop_Kursovaya.Properties.Settings.shopConnectionString"
+            connectionString="Data Source=АЛЕКСАНДР\SQLEXPRESS;Initial Catalog=shop;User ID=malov;Password=12345SS"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>

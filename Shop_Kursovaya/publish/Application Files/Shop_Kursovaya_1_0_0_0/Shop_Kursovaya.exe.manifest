@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Shop_Kursovaya.exe" version="1.0.0.0" publicKeyToken="5352dc5ca85c2e0b" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="chinaz20.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Shop_Kursovaya" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Shop_Kursovaya.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Параметры манифеста UAC
+          При необходимости изменить уровень управления учетными записями Windows замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Задание узла requestedExecutionLevel отключит виртуализацию файла и реестра.
+            Если виртуализацию файла и реестра нужно использовать для обратной 
+            совместимости, удалите узел requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Shop_Kursovaya.exe" size="6945792">
+      <assemblyIdentity name="Shop_Kursovaya" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wkC4zCPAax47kbxqQHka3hMZVJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="chinaz20.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZgUrv9ZCWYkCTIuCAjVY3dpobWo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Shop_Kursovaya.exe.config" size="429">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ndjSayrE9YE9x28+KkIeqNPO1ww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Список всех версий Windows, с которыми это приложение предназначено работать. Windows автоматически выберет наиболее совместимую среду.-->
+      <!-- Если приложение предназначено для работы с Windows 7, раскомментируйте следующий узел supportedOS-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=АЛЕКСАНДР\1" issuerKeyHash="0ea4b690d38b8edf7fd052833bb96fe2a2b40338" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>OiyPwyu0FBLJs5Mdzv52Kp7i0q0=</DigestValue></Reference></SignedInfo><SignatureValue>CDFe64oo2dzyajMqXp7DipG9Mbp+x8TBs3jpR6ZAmu0eoTFNZ+wUsAVEwA8TYLezMpjEYwFtgzfctQ/TKTMjslBVyyzwU3hoSz478I6p/4A8kJGjpG8m6H2Bc9oHFoOTunloi+ha9mirExs9FINtbUMcsEDgsRRjUSic39H/qoE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>iN2tMiDhQVlldA06msIc2JyxFQZ3ntM+zE8fLuDUnFRVUIw/rlxtdgs5awWokO15dJWyPbTk/cbKsR8nq4AjSB5RaoJ8XPmLLYVYUyNSwEn9nxFKf/Ea5GmxtcRO+xZ0EF1E3OjzL/fgcn/B/zCbOaKpa3nT/gIBPYE9aGNVXZs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="add2e29e2a76fece1d93b3c91214b42bc38f2c3a" Description="" Url=""><as:assemblyIdentity name="Shop_Kursovaya.exe" version="1.0.0.0" publicKeyToken="5352dc5ca85c2e0b" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=АЛЕКСАНДР\1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>f7Kdv5Rn1PIz6kn12PxuDAcbzGQ=</DigestValue></Reference></SignedInfo><SignatureValue>frKcEUllyeFrz9qlWA+K4mlZSBsnxg1W+QaK/j4/6ZEz9CMbSMOwDPC706pSG2waBEHA+agE2imOnuSahN+mmHGDZPBZLWgkGdZSUFzxGHJ7LD3KokSfFuX5JhvpHFoNtDxIGvpbAILkzUoY68ADZmHypcIiKg5OSBzNGhEmnts=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>iN2tMiDhQVlldA06msIc2JyxFQZ3ntM+zE8fLuDUnFRVUIw/rlxtdgs5awWokO15dJWyPbTk/cbKsR8nq4AjSB5RaoJ8XPmLLYVYUyNSwEn9nxFKf/Ea5GmxtcRO+xZ0EF1E3OjzL/fgcn/B/zCbOaKpa3nT/gIBPYE9aGNVXZs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQOD6nk9NkipVA8YgaDkghfTANBgkqhkiG9w0BAQUFADAhMR8wHQYDVQQDHhYEEAQbBBUEGgQhBBAEHQQUBCAAXAAxMB4XDTE0MTAyNjEyMTMwMVoXDTE1MTAyNjE4MTMwMVowITEfMB0GA1UEAx4WBBAEGwQVBBoEIQQQBB0EFAQgAFwAMTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAiN2tMiDhQVlldA06msIc2JyxFQZ3ntM+zE8fLuDUnFRVUIw/rlxtdgs5awWokO15dJWyPbTk/cbKsR8nq4AjSB5RaoJ8XPmLLYVYUyNSwEn9nxFKf/Ea5GmxtcRO+xZ0EF1E3OjzL/fgcn/B/zCbOaKpa3nT/gIBPYE9aGNVXZsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCABWWsWw3evM525g0Gt+vwADK7HDArVlaDqKw/knE/Ku0RZBQwP1ORtOojk25jJVb0k3HXp7v7Qy4vEVUHvhZd+/HkPyC+c0+D48qchzH12YAjifhYMNm3vl/idq6cDCUaIiJOZf2AW5NbBFtJFokOC0ephQX1SQa5Hu91RslG8A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,4569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{831439FA-9B6F-4D26-908C-C4D2EE841E87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shop_Kursovaya</RootNamespace>
+    <AssemblyName>Shop_Kursovaya</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chinaz20.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BBB58D5C1D78910203F67F241922B820FCDF1690</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Shop_Kursovaya_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutentificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutentificationForm.Designer.cs">
+      <DependentUpon>AutentificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cathegory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CathegoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CathegoryForm.Designer.cs">
+      <DependentUpon>CathegoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CathegoryProduct.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientEditingForm.Designer.cs">
+      <DependentUpon>ClientEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="financialReportEveryDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financialReportEveryDay.Designer.cs">
+      <DependentUpon>financialReportEveryDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditor.Designer.cs">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditorProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditorProperties.Designer.cs">
+      <DependentUpon>FormEditorProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormARM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormARM.Designer.cs">
+      <DependentUpon>FormARM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Producer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProducerEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProducerEditingForm.Designer.cs">
+      <DependentUpon>ProducerEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductEditingform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductEditingform.Designer.cs">
+      <DependentUpon>ProductEditingform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductProducer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportProductMaxSalese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportProductMaxSalese.Designer.cs">
+      <DependentUpon>reportProductMaxSalese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repottProductMinimum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repottProductMinimum.Designer.cs">
+      <DependentUpon>repottProductMinimum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesEditingForm.Designer.cs">
+      <DependentUpon>SalesEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Content Include="shop.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shop_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>shop.mdf</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\Scanner Stop1.png" />
+    <None Include="Resources\Save Error1.png" />
+    <None Include="Resources\Save Delete1.png" />
+    <None Include="Resources\Save Check1.png" />
+    <None Include="Resources\Save All 21.png" />
+    <EmbeddedResource Include="AutentificationForm.resx">
+      <DependentUpon>AutentificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CathegoryForm.resx">
+      <DependentUpon>CathegoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientEditingForm.resx">
+      <DependentUpon>ClientEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="financialReportEveryDay.resx">
+      <DependentUpon>financialReportEveryDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditor.resx">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditorProperties.resx">
+      <DependentUpon>FormEditorProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormARM.resx">
+      <DependentUpon>FormARM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProducerEditingForm.resx">
+      <DependentUpon>ProducerEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductEditingform.resx">
+      <DependentUpon>ProductEditingform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="app.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="reportProductMaxSalese.resx">
+      <DependentUpon>reportProductMaxSalese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repottProductMinimum.resx">
+      <DependentUpon>repottProductMinimum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesEditingForm.resx">
+      <DependentUpon>SalesEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="shopDataSet.xsc">
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shopDataSet.xss">
+      <DependentUpon>shopDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Approve.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 2 Analysis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulb Electric.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulb Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulb Off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulb On.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender 1 Week.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender 5 Week.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender 7 Week.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender 31 Day.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender Zoom In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calender Zoom Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardHolder 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardHolder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart Column.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart Dots.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart Line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart Wave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact New 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disapprove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Zoom In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display Zoom Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Attach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Check in.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Check Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Forward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Check in.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Check Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Forward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Refresh 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Mail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive CD 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive CD Burner 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive CD Burner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive CD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive DVD Burner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive DVD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drive USB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD Burner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email Read.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email Send.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorite History.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorites.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Documents.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Next.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Previous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Replace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Text.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy Drive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Backward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Forward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Informatio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Network Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2 Windows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Favorite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Forward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Network.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Windows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Global Settings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group List.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Drive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help Contents.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help Dynamic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help Favorites.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help File Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help File Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help File.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help Index Results.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help Index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet Update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lounge 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lounge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down Left 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down Right 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down Right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation First 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation First.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Last 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Last.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Left 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Next 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Next.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Previous 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Previous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Right 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Stop 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up Left 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up Right 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up Right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network Drive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Objects 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Objects.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Chair 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Chair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Web.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA 2 Forms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA 3 Forms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Sync.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures First.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Last.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Next.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Parental.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Previous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Read only.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Zoom In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures Zoom Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Analysis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Flag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Zoom In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Zoom Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart Zoom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Laser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin Full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin Send 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin Send.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rename.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Read Only.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save All 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save All.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Read Only.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Disabled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Enabled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Email.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound Mute 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound Mute.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound On 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound On.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speakers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Add 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Check 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Collapse Vertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Collapse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Configuration 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Configuration 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Delete 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Error 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Error 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Expand Vertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Expand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Forward 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Forward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Information 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Pencil 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Pencil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Refresh 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Refresh 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Restricted 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Search 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Search 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Stop 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Symbol Back 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Warning .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Warning 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Warning 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Systems.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Ascending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Descending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Start 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Stop 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Play 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Stop 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Empty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash In.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tutorial 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tutorial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 IdeaX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Down 22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Idea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8 Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Chat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Down 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User IdeaX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User List.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Up 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Unknown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Cascade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Command.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Configuration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Dialog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Dock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Edit 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Favorite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window FullScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Left Pane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Online.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Restricted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Right Pane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Split Horizontal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Split Vertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Tile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Undock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window View.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Warning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Automatic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chilli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glossy_ecommerce_pack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golden_offer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golder_offer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\present.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chinaz20.ico" />
+    <None Include="Resources\Windows.png" />
+    <None Include="Resources\Windows Automatic.png" />
+    <None Include="Resources\Window.png" />
+    <None Include="Resources\Window Warning.png" />
+    <None Include="Resources\Window View.png" />
+    <None Include="Resources\Window Undock.png" />
+    <None Include="Resources\Window Tile.png" />
+    <None Include="Resources\Window Split Vertical.png" />
+    <None Include="Resources\Window Split Horizontal.png" />
+    <None Include="Resources\Window Right Pane.png" />
+    <None Include="Resources\Window Restricted.png" />
+    <None Include="Resources\Window Online.png" />
+    <None Include="Resources\Window Left Pane.png" />
+    <None Include="Resources\Window Information.png" />
+    <None Include="Resources\Window FullScreen.png" />
+    <None Include="Resources\Window Favorite.png" />
+    <None Include="Resources\Window Edit.png" />
+    <None Include="Resources\Window Edit 2.png" />
+    <None Include="Resources\Window Dock.png" />
+    <None Include="Resources\Window Dialog.png" />
+    <None Include="Resources\Window Delete.png" />
+    <None Include="Resources\Window Configuration.png" />
+    <None Include="Resources\Window Command.png" />
+    <None Include="Resources\Window Cascade.png" />
+    <None Include="Resources\Window Add.png" />
+    <None Include="Resources\Webcam.png" />
+    <None Include="Resources\Webcam Warning.png" />
+    <None Include="Resources\Webcam Unknown.png" />
+    <None Include="Resources\Webcam Stop.png" />
+    <None Include="Resources\Webcam Start.png" />
+    <None Include="Resources\Webcam Security.png" />
+    <None Include="Resources\Webcam Search.png" />
+    <None Include="Resources\Webcam Schedule.png" />
+    <None Include="Resources\Webcam Restricted.png" />
+    <None Include="Resources\Webcam Information.png" />
+    <None Include="Resources\Webcam Error.png" />
+    <None Include="Resources\Webcam Disconnected.png" />
+    <None Include="Resources\Webcam Disabled.png" />
+    <None Include="Resources\Webcam Delete.png" />
+    <None Include="Resources\Webcam Connected.png" />
+    <None Include="Resources\Webcam Configuration.png" />
+    <None Include="Resources\Webcam Check.png" />
+    <None Include="Resources\Webcam Add.png" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\User Warning.png" />
+    <None Include="Resources\User Up.png" />
+    <None Include="Resources\User Up 2.png" />
+    <None Include="Resources\User Stop.png" />
+    <None Include="Resources\User Security.png" />
+    <None Include="Resources\User Search.png" />
+    <None Include="Resources\User Schedule.png" />
+    <None Include="Resources\User Restricted.png" />
+    <None Include="Resources\User Refresh.png" />
+    <None Include="Resources\User New.png" />
+    <None Include="Resources\User List.png" />
+    <None Include="Resources\User Information.png" />
+    <None Include="Resources\User IdeaX.png" />
+    <None Include="Resources\User Help.png" />
+    <None Include="Resources\User Error.png" />
+    <None Include="Resources\User Edit.png" />
+    <None Include="Resources\User Edit 2.png" />
+    <None Include="Resources\User Down.png" />
+    <None Include="Resources\User Down 2.png" />
+    <None Include="Resources\User Delete.png" />
+    <None Include="Resources\User Configuration.png" />
+    <None Include="Resources\User Check.png" />
+    <None Include="Resources\User Chat.png" />
+    <None Include="Resources\User Add.png" />
+    <None Include="Resources\User 10.png" />
+    <None Include="Resources\User 9.png" />
+    <None Include="Resources\User 8.png" />
+    <None Include="Resources\User 8 Warning.png" />
+    <None Include="Resources\User 8 Up.png" />
+    <None Include="Resources\User 8 Up 2.png" />
+    <None Include="Resources\User 8 Stop.png" />
+    <None Include="Resources\User 8 Security.png" />
+    <None Include="Resources\User 8 Search.png" />
+    <None Include="Resources\User 8 Restricted.png" />
+    <None Include="Resources\User 8 Refresh.png" />
+    <None Include="Resources\User 8 New.png" />
+    <None Include="Resources\User 8 Information.png" />
+    <None Include="Resources\User 8 Idea.png" />
+    <None Include="Resources\User 8 Help.png" />
+    <None Include="Resources\User 8 Error.png" />
+    <None Include="Resources\User 8 Edit.png" />
+    <None Include="Resources\User 8 Edit 2.png" />
+    <None Include="Resources\User 8 Down.png" />
+    <None Include="Resources\User 8 Down 22.png" />
+    <None Include="Resources\User 8 Delete.png" />
+    <None Include="Resources\User 8 Check.png" />
+    <None Include="Resources\User 8 Chat.png" />
+    <None Include="Resources\User 8 Add.png" />
+    <None Include="Resources\User 7.png" />
+    <None Include="Resources\User 7 Warning.png" />
+    <None Include="Resources\User 7 Up.png" />
+    <None Include="Resources\User 7 Up 2.png" />
+    <None Include="Resources\User 7 Stop.png" />
+    <None Include="Resources\User 7 Security.png" />
+    <None Include="Resources\User 7 Search.png" />
+    <None Include="Resources\User 7 Restricted.png" />
+    <None Include="Resources\User 7 Refresh.png" />
+    <None Include="Resources\User 7 New.png" />
+    <None Include="Resources\User 7 Information.png" />
+    <None Include="Resources\User 7 Idea.png" />
+    <None Include="Resources\User 7 Help.png" />
+    <None Include="Resources\User 7 Error.png" />
+    <None Include="Resources\User 7 Edit.png" />
+    <None Include="Resources\User 7 Edit 2.png" />
+    <None Include="Resources\User 7 Down.png" />
+    <None Include="Resources\User 7 Down 2.png" />
+    <None Include="Resources\User 7 Delete.png" />
+    <None Include="Resources\User 7 Configuration.png" />
+    <None Include="Resources\User 7 Check.png" />
+    <None Include="Resources\User 7 Chat.png" />
+    <None Include="Resources\User 7 Add.png" />
+    <None Include="Resources\User 6.png" />
+    <None Include="Resources\User 6 Warning.png" />
+    <None Include="Resources\User 6 Up.png" />
+    <None Include="Resources\User 6 Up 2.png" />
+    <None Include="Resources\User 6 Stop.png" />
+    <None Include="Resources\User 6 Security.png" />
+    <None Include="Resources\User 6 Search.png" />
+    <None Include="Resources\User 6 Restricted.png" />
+    <None Include="Resources\User 6 Refresh.png" />
+    <None Include="Resources\User 6 New.png" />
+    <None Include="Resources\User 6 Information.png" />
+    <None Include="Resources\User 6 Idea.png" />
+    <None Include="Resources\User 6 Help.png" />
+    <None Include="Resources\User 6 Error.png" />
+    <None Include="Resources\User 6 Edit.png" />
+    <None Include="Resources\User 6 Edit 2.png" />
+    <None Include="Resources\User 6 Down.png" />
+    <None Include="Resources\User 6 Down 2.png" />
+    <None Include="Resources\User 6 Delete.png" />
+    <None Include="Resources\User 6 Configuration.png" />
+    <None Include="Resources\User 6 Check.png" />
+    <None Include="Resources\User 6 Chat.png" />
+    <None Include="Resources\User 6 Add.png" />
+    <None Include="Resources\User 5.png" />
+    <None Include="Resources\User 5 Warning.png" />
+    <None Include="Resources\User 5 Up.png" />
+    <None Include="Resources\User 5 Up 2.png" />
+    <None Include="Resources\User 5 Stop.png" />
+    <None Include="Resources\User 5 Security.png" />
+    <None Include="Resources\User 5 Search.png" />
+    <None Include="Resources\User 5 Restricted.png" />
+    <None Include="Resources\User 5 Refresh.png" />
+    <None Include="Resources\User 5 New.png" />
+    <None Include="Resources\User 5 Information.png" />
+    <None Include="Resources\User 5 Idea.png" />
+    <None Include="Resources\User 5 Help.png" />
+    <None Include="Resources\User 5 Error.png" />
+    <None Include="Resources\User 5 Edit.png" />
+    <None Include="Resources\User 5 Edit 2.png" />
+    <None Include="Resources\User 5 Down.png" />
+    <None Include="Resources\User 5 Down 2.png" />
+    <None Include="Resources\User 5 Delete.png" />
+    <None Include="Resources\User 5 Configuration.png" />
+    <None Include="Resources\User 5 Check.png" />
+    <None Include="Resources\User 5 Chat.png" />
+    <None Include="Resources\User 5 Add.png" />
+    <None Include="Resources\User 4.png" />
+    <None Include="Resources\User 4 Warning.png" />
+    <None Include="Resources\User 4 Up.png" />
+    <None Include="Resources\User 4 Up 2.png" />
+    <None Include="Resources\User 4 Stop.png" />
+    <None Include="Resources\User 4 Security.png" />
+    <None Include="Resources\User 4 Search.png" />
+    <None Include="Resources\User 4 Restricted.png" />
+    <None Include="Resources\User 4 Refresh.png" />
+    <None Include="Resources\User 4 New.png" />
+    <None Include="Resources\User 4 Information.png" />
+    <None Include="Resources\User 4 IdeaX.png" />
+    <None Include="Resources\User 4 Help.png" />
+    <None Include="Resources\User 4 Error.png" />
+    <None Include="Resources\User 4 Edit.png" />
+    <None Include="Resources\User 4 Edit 2.png" />
+    <None Include="Resources\User 4 Down.png" />
+    <None Include="Resources\User 4 Down 2.png" />
+    <None Include="Resources\User 4 Delete.png" />
+    <None Include="Resources\User 4 Configuration.png" />
+    <None Include="Resources\User 4 Check.png" />
+    <None Include="Resources\User 4 Chat.png" />
+    <None Include="Resources\User 4 Add.png" />
+    <None Include="Resources\User 3.png" />
+    <None Include="Resources\User 3 Warning.png" />
+    <None Include="Resources\User 3 Up.png" />
+    <None Include="Resources\User 3 Up 2.png" />
+    <None Include="Resources\User 3 Stop.png" />
+    <None Include="Resources\User 3 Security.png" />
+    <None Include="Resources\User 3 Search.png" />
+    <None Include="Resources\User 3 Restricted.png" />
+    <None Include="Resources\User 3 Refresh.png" />
+    <None Include="Resources\User 3 New.png" />
+    <None Include="Resources\User 3 Information.png" />
+    <None Include="Resources\User 3 Idea.png" />
+    <None Include="Resources\User 3 Help.png" />
+    <None Include="Resources\User 3 Error.png" />
+    <None Include="Resources\User 3 Edit.png" />
+    <None Include="Resources\User 3 Edit 2.png" />
+    <None Include="Resources\User 3 Down.png" />
+    <None Include="Resources\User 3 Down 2.png" />
+    <None Include="Resources\User 3 Delete.png" />
+    <None Include="Resources\User 3 Configuration.png" />
+    <None Include="Resources\User 3 Check.png" />
+    <None Include="Resources\User 3 Chat.png" />
+    <None Include="Resources\User 3 Add.png" />
+    <None Include="Resources\User 2.png" />
+    <None Include="Resources\User 2 Warning.png" />
+    <None Include="Resources\User 2 Up.png" />
+    <None Include="Resources\User 2 Up 2.png" />
+    <None Include="Resources\User 2 Stop.png" />
+    <None Include="Resources\User 2 Security.png" />
+    <None Include="Resources\User 2 Search.png" />
+    <None Include="Resources\User 2 Schedule.png" />
+    <None Include="Resources\User 2 Restricted.png" />
+    <None Include="Resources\User 2 Refresh.png" />
+    <None Include="Resources\User 2 New.png" />
+    <None Include="Resources\User 2 Information.png" />
+    <None Include="Resources\User 2 Idea.png" />
+    <None Include="Resources\User 2 Help.png" />
+    <None Include="Resources\User 2 Error.png" />
+    <None Include="Resources\User 2 Edit.png" />
+    <None Include="Resources\User 2 Edit 2.png" />
+    <None Include="Resources\User 2 Down.png" />
+    <None Include="Resources\User 2 Down 2.png" />
+    <None Include="Resources\User 2 Delete.png" />
+    <None Include="Resources\User 2 Configuration.png" />
+    <None Include="Resources\User 2 Check.png" />
+    <None Include="Resources\User 2 Chat.png" />
+    <None Include="Resources\User 2 Add.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Tutorial.png" />
+    <None Include="Resources\Tutorial 2.png" />
+    <None Include="Resources\Trash Out.png" />
+    <None Include="Resources\Trash Open.png" />
+    <None Include="Resources\Trash In.png" />
+    <None Include="Resources\Trash Full.png" />
+    <None Include="Resources\Trash Empty.png" />
+    <None Include="Resources\Tools.png" />
+    <None Include="Resources\Tools 4.png" />
+    <None Include="Resources\Tools 3.png" />
+    <None Include="Resources\Tools 2.png" />
+    <None Include="Resources\Time.png" />
+    <None Include="Resources\Time Up.png" />
+    <None Include="Resources\Time Stop.png" />
+    <None Include="Resources\Time Stop 2.png" />
+    <None Include="Resources\Time Play.png" />
+    <None Include="Resources\Time Play 2.png" />
+    <None Include="Resources\Time Down.png" />
+    <None Include="Resources\Time 2.png" />
+    <None Include="Resources\Time 2 Up.png" />
+    <None Include="Resources\Time 2 Stop.png" />
+    <None Include="Resources\Time 2 Stop 2.png" />
+    <None Include="Resources\Time 2 Start.png" />
+    <None Include="Resources\Time 2 Start 2.png" />
+    <None Include="Resources\Time 2 Down.png" />
+    <None Include="Resources\Text Descending.png" />
+    <None Include="Resources\Text Ascending.png" />
+    <None Include="Resources\Tech.png" />
+    <None Include="Resources\Tech Warning.png" />
+    <None Include="Resources\Tech Unavailable.png" />
+    <None Include="Resources\Tech Stop.png" />
+    <None Include="Resources\Tech Security.png" />
+    <None Include="Resources\Tech Search.png" />
+    <None Include="Resources\Tech Restricted.png" />
+    <None Include="Resources\Tech Refresh.png" />
+    <None Include="Resources\Tech New.png" />
+    <None Include="Resources\Tech Information.png" />
+    <None Include="Resources\Tech Idea.png" />
+    <None Include="Resources\Tech Help.png" />
+    <None Include="Resources\Tech Error.png" />
+    <None Include="Resources\Tech Edit.png" />
+    <None Include="Resources\Tech Edit 2.png" />
+    <None Include="Resources\Tech Delete.png" />
+    <None Include="Resources\Tech Configuration.png" />
+    <None Include="Resources\Tech Check.png" />
+    <None Include="Resources\Tech Chat.png" />
+    <None Include="Resources\Tech Add.png" />
+    <None Include="Resources\Task.png" />
+    <None Include="Resources\Task New.png" />
+    <None Include="Resources\Systems.png" />
+    <None Include="Resources\Symbol Warning 3.png" />
+    <None Include="Resources\Symbol Warning 2.png" />
+    <None Include="Resources\Symbol Warning .png" />
+    <None Include="Resources\Symbol Up.png" />
+    <None Include="Resources\Symbol Up 2.png" />
+    <None Include="Resources\Symbol Symbol Back 2.png" />
+    <None Include="Resources\Symbol Stop.png" />
+    <None Include="Resources\Symbol Stop 2.png" />
+    <None Include="Resources\Symbol Search.png" />
+    <None Include="Resources\Symbol Search 3.png" />
+    <None Include="Resources\Symbol Search 2.png" />
+    <None Include="Resources\Symbol Restricted.png" />
+    <None Include="Resources\Symbol Restricted 2.png" />
+    <None Include="Resources\Symbol Refresh.png" />
+    <None Include="Resources\Symbol Refresh 4.png" />
+    <None Include="Resources\Symbol Refresh 3.png" />
+    <None Include="Resources\Symbol Question.png" />
+    <None Include="Resources\Symbol Pencil.png" />
+    <None Include="Resources\Symbol Pencil 2.png" />
+    <None Include="Resources\Symbol New.png" />
+    <None Include="Resources\Symbol Information 2.png" />
+    <None Include="Resources\Symbol Idea.png" />
+    <None Include="Resources\Symbol Forward.png" />
+    <None Include="Resources\Symbol Forward 2.png" />
+    <None Include="Resources\Symbol Expand.png" />
+    <None Include="Resources\Symbol Expand Vertical.png" />
+    <None Include="Resources\Symbol Error.png" />
+    <None Include="Resources\Symbol Error 3.png" />
+    <None Include="Resources\Symbol Error 2.png" />
+    <None Include="Resources\Symbol Edit.png" />
+    <None Include="Resources\Symbol Edit 2.png" />
+    <None Include="Resources\Symbol Down.png" />
+    <None Include="Resources\Symbol Down 2.png" />
+    <None Include="Resources\Symbol Delete.png" />
+    <None Include="Resources\Symbol Delete 2.png" />
+    <None Include="Resources\Symbol Configuration.png" />
+    <None Include="Resources\Symbol Configuration 3.png" />
+    <None Include="Resources\Symbol Configuration 2.png" />
+    <None Include="Resources\Symbol Collapse.png" />
+    <None Include="Resources\Symbol Collapse Vertical.png" />
+    <None Include="Resources\Symbol Check.png" />
+    <None Include="Resources\Symbol Check 2.png" />
+    <None Include="Resources\Symbol Back.png" />
+    <None Include="Resources\Symbol Add.png" />
+    <None Include="Resources\Symbol Add 2.png" />
+    <None Include="Resources\Stop.png" />
+    <None Include="Resources\Stop 3.png" />
+    <None Include="Resources\Start.png" />
+    <None Include="Resources\Start 2.png" />
+    <None Include="Resources\Speakers.png" />
+    <None Include="Resources\Sound On.png" />
+    <None Include="Resources\Sound On 2.png" />
+    <None Include="Resources\Sound Mute.png" />
+    <None Include="Resources\Sound Mute 2.png" />
+    <None Include="Resources\Shopping Cart.png" />
+    <None Include="Resources\Shopping Cart Refresh.png" />
+    <None Include="Resources\Shopping Cart Information.png" />
+    <None Include="Resources\Shopping Cart Error.png" />
+    <None Include="Resources\Shopping Cart Delete.png" />
+    <None Include="Resources\Shopping Cart Check.png" />
+    <None Include="Resources\Shopping Cart Add.png" />
+    <None Include="Resources\Server.png" />
+    <None Include="Resources\Server Warning.png" />
+    <None Include="Resources\Server Stop.png" />
+    <None Include="Resources\Server Start.png" />
+    <None Include="Resources\Server Security.png" />
+    <None Include="Resources\Server Search.png" />
+    <None Include="Resources\Server Schedule.png" />
+    <None Include="Resources\Server Restricted.png" />
+    <None Include="Resources\Server Refresh.png" />
+    <None Include="Resources\Server Online.png" />
+    <None Include="Resources\Server Offline.png" />
+    <None Include="Resources\Server New.png" />
+    <None Include="Resources\Server List.png" />
+    <None Include="Resources\Server Information.png" />
+    <None Include="Resources\Server Help.png" />
+    <None Include="Resources\Server Error.png" />
+    <None Include="Resources\Server Email.png" />
+    <None Include="Resources\Server Download.png" />
+    <None Include="Resources\Server Delete.png" />
+    <None Include="Resources\Server Connect.png" />
+    <None Include="Resources\Server Configuration.png" />
+    <None Include="Resources\Server Check.png" />
+    <None Include="Resources\Server Add.png" />
+    <None Include="Resources\Send Email.png" />
+    <None Include="Resources\Security.png" />
+    <None Include="Resources\Security Warning.png" />
+    <None Include="Resources\Security View.png" />
+    <None Include="Resources\Security Security.png" />
+    <None Include="Resources\Security Schedule.png" />
+    <None Include="Resources\Security Restricted.png" />
+    <None Include="Resources\Security Information.png" />
+    <None Include="Resources\Security Help.png" />
+    <None Include="Resources\Security Forbidden.png" />
+    <None Include="Resources\Security Error.png" />
+    <None Include="Resources\Security Enabled.png" />
+    <None Include="Resources\Security Disabled.png" />
+    <None Include="Resources\Security Delete.png" />
+    <None Include="Resources\Security Configuration.png" />
+    <None Include="Resources\Security Add.png" />
+    <None Include="Resources\Security 2.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Scanner.png" />
+    <None Include="Resources\Scanner Warning.png" />
+    <None Include="Resources\Scanner View.png" />
+    <None Include="Resources\Scanner Unknown.png" />
+    <None Include="Resources\Scanner Stop.png" />
+    <None Include="Resources\Scanner Start.png" />
+    <None Include="Resources\Scanner Search.png" />
+    <None Include="Resources\Scanner Restricted.png" />
+    <None Include="Resources\Scanner Refresh.png" />
+    <None Include="Resources\Scanner New.png" />
+    <None Include="Resources\Scanner Information.png" />
+    <None Include="Resources\Scanner Error.png" />
+    <None Include="Resources\Scanner Delete.png" />
+    <None Include="Resources\Scanner Connect.png" />
+    <None Include="Resources\Scanner Configuration.png" />
+    <None Include="Resources\Scanner Check.png" />
+    <None Include="Resources\Scanner Add.png" />
+    <None Include="Resources\Save Warning.png" />
+    <None Include="Resources\Save Stop.png" />
+    <None Include="Resources\Save Search.png" />
+    <None Include="Resources\Save Restricted.png" />
+    <None Include="Resources\Save Read Only.png" />
+    <None Include="Resources\Save Information.png" />
+    <None Include="Resources\Save Error.png" />
+    <None Include="Resources\Save Delete.png" />
+    <None Include="Resources\Save Check.png" />
+    <None Include="Resources\Save All.png" />
+    <None Include="Resources\Save All 2.png" />
+    <None Include="Resources\Save Add.png" />
+    <None Include="Resources\Save 2.png" />
+    <None Include="Resources\Save 2 Warning.png" />
+    <None Include="Resources\Save 2 Stop.png" />
+    <None Include="Resources\Save 2 Restricted.png" />
+    <None Include="Resources\Save 2 Read Only.png" />
+    <None Include="Resources\Save 2 Information.png" />
+    <None Include="Resources\Save 2 History.png" />
+    <None Include="Resources\Save 2 Error.png" />
+    <None Include="Resources\Save 2 Delete.png" />
+    <None Include="Resources\Save 2 Configuration.png" />
+    <None Include="Resources\Save 2 Check.png" />
+    <None Include="Resources\Save 2 Add.png" />
+    <None Include="Resources\Save 2  Cancel.png" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\Report Warning.png" />
+    <None Include="Resources\Report Stop.png" />
+    <None Include="Resources\Report Security.png" />
+    <None Include="Resources\Report Search.png" />
+    <None Include="Resources\Report Schedule.png" />
+    <None Include="Resources\Report Restricted.png" />
+    <None Include="Resources\Report Refresh.png" />
+    <None Include="Resources\Report New.png" />
+    <None Include="Resources\Report Information.png" />
+    <None Include="Resources\Report Information 2.png" />
+    <None Include="Resources\Report Help.png" />
+    <None Include="Resources\Report Favorites.png" />
+    <None Include="Resources\Report Error.png" />
+    <None Include="Resources\Report Edit.png" />
+    <None Include="Resources\Report Edit 2.png" />
+    <None Include="Resources\Report Delete.png" />
+    <None Include="Resources\Report Configuration.png" />
+    <None Include="Resources\Report Check.png" />
+    <None Include="Resources\Report Add.png" />
+    <None Include="Resources\Rename.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Red Up.png" />
+    <None Include="Resources\Red Forward.png" />
+    <None Include="Resources\Red Down.png" />
+    <None Include="Resources\Red Back.png" />
+    <None Include="Resources\Recycle Bin.png" />
+    <None Include="Resources\Recycle Bin Send.png" />
+    <None Include="Resources\Recycle Bin Send 2.png" />
+    <None Include="Resources\Recycle Bin Full.png" />
+    <None Include="Resources\Question.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\Printer Warning.png" />
+    <None Include="Resources\Printer Stop.png" />
+    <None Include="Resources\Printer Start.png" />
+    <None Include="Resources\Printer Search.png" />
+    <None Include="Resources\Printer Schedule.png" />
+    <None Include="Resources\Printer Restricted.png" />
+    <None Include="Resources\Printer Refresh.png" />
+    <None Include="Resources\Printer New.png" />
+    <None Include="Resources\Printer Laser.png" />
+    <None Include="Resources\Printer Laser Warning.png" />
+    <None Include="Resources\Printer Laser Stop.png" />
+    <None Include="Resources\Printer Laser Security.png" />
+    <None Include="Resources\Printer Laser Search.png" />
+    <None Include="Resources\Printer Laser Restricted.png" />
+    <None Include="Resources\Printer Laser Refresh.png" />
+    <None Include="Resources\Printer Laser New.png" />
+    <None Include="Resources\Printer Laser Information.png" />
+    <None Include="Resources\Printer Laser Help.png" />
+    <None Include="Resources\Printer Laser Error.png" />
+    <None Include="Resources\Printer Laser Delete.png" />
+    <None Include="Resources\Printer Laser Configuration.png" />
+    <None Include="Resources\Printer Laser Check.png" />
+    <None Include="Resources\Printer Laser Add.png" />
+    <None Include="Resources\Printer Information.png" />
+    <None Include="Resources\Printer Information 2.png" />
+    <None Include="Resources\Printer Help.png" />
+    <None Include="Resources\Printer Error.png" />
+    <None Include="Resources\Printer Delete.png" />
+    <None Include="Resources\Printer Connect.png" />
+    <None Include="Resources\Printer Configuration.png" />
+    <None Include="Resources\Printer Check.png" />
+    <None Include="Resources\Printer Add.png" />
+    <None Include="Resources\Printer 2.png" />
+    <None Include="Resources\Pie Chart.png" />
+    <None Include="Resources\Pie Chart Zoom.png" />
+    <None Include="Resources\Pie Chart Zoom Out.png" />
+    <None Include="Resources\Pie Chart Zoom In.png" />
+    <None Include="Resources\Pie Chart Warning.png" />
+    <None Include="Resources\Pie Chart New.png" />
+    <None Include="Resources\Pie Chart Information.png" />
+    <None Include="Resources\Pie Chart Flag.png" />
+    <None Include="Resources\Pie Chart Analysis.png" />
+    <None Include="Resources\Pie Chart Add.png" />
+    <None Include="Resources\Pie Chart 4.png" />
+    <None Include="Resources\Pie Chart 3.png" />
+    <None Include="Resources\Pie Chart 2.png" />
+    <None Include="Resources\Pictures.png" />
+    <None Include="Resources\Pictures Zoom Out.png" />
+    <None Include="Resources\Pictures Zoom In.png" />
+    <None Include="Resources\Pictures Warning.png" />
+    <None Include="Resources\Pictures Stop.png" />
+    <None Include="Resources\Pictures Search.png" />
+    <None Include="Resources\Pictures Refresh.png" />
+    <None Include="Resources\Pictures Read only.png" />
+    <None Include="Resources\Pictures Previous.png" />
+    <None Include="Resources\Pictures Parental.png" />
+    <None Include="Resources\Pictures Next.png" />
+    <None Include="Resources\Pictures New.png" />
+    <None Include="Resources\Pictures Last.png" />
+    <None Include="Resources\Pictures Information.png" />
+    <None Include="Resources\Pictures Information 2.png" />
+    <None Include="Resources\Pictures Help.png" />
+    <None Include="Resources\Pictures First.png" />
+    <None Include="Resources\Pictures Error.png" />
+    <None Include="Resources\Pictures Edit.png" />
+    <None Include="Resources\Pictures Edit 2.png" />
+    <None Include="Resources\Pictures Delete.png" />
+    <None Include="Resources\Pictures Check.png" />
+    <None Include="Resources\Pictures Add.png" />
+    <None Include="Resources\Perspective Save.png" />
+    <None Include="Resources\Perspective Save Warning.png" />
+    <None Include="Resources\Perspective Save Restricted.png" />
+    <None Include="Resources\Perspective Save Information.png" />
+    <None Include="Resources\Perspective Save History.png" />
+    <None Include="Resources\Perspective Save Error.png" />
+    <None Include="Resources\Perspective Save Configuration.png" />
+    <None Include="Resources\Perspective Save Check.png" />
+    <None Include="Resources\Perspective Save Cancel.png" />
+    <None Include="Resources\Perspective Save All.png" />
+    <None Include="Resources\PDA.png" />
+    <None Include="Resources\PDA Warning.png" />
+    <None Include="Resources\PDA USB.png" />
+    <None Include="Resources\PDA Sync.png" />
+    <None Include="Resources\PDA Stop.png" />
+    <None Include="Resources\PDA Start.png" />
+    <None Include="Resources\PDA Security.png" />
+    <None Include="Resources\PDA Search.png" />
+    <None Include="Resources\PDA Schedule.png" />
+    <None Include="Resources\PDA Restricted.png" />
+    <None Include="Resources\PDA New.png" />
+    <None Include="Resources\PDA Information.png" />
+    <None Include="Resources\PDA Forms.png" />
+    <None Include="Resources\PDA Error.png" />
+    <None Include="Resources\PDA Disconnected.png" />
+    <None Include="Resources\PDA Delete.png" />
+    <None Include="Resources\PDA Connected.png" />
+    <None Include="Resources\PDA Connect.png" />
+    <None Include="Resources\PDA Configuration.png" />
+    <None Include="Resources\PDA Check.png" />
+    <None Include="Resources\PDA Add.png" />
+    <None Include="Resources\PDA 3.png" />
+    <None Include="Resources\PDA 3 Forms.png" />
+    <None Include="Resources\PDA 2.png" />
+    <None Include="Resources\PDA 2 Forms.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Open Web.png" />
+    <None Include="Resources\Office Chair.png" />
+    <None Include="Resources\Office Chair 2.png" />
+    <None Include="Resources\Objects.png" />
+    <None Include="Resources\Objects 2.png" />
+    <None Include="Resources\Network Drive.png" />
+    <None Include="Resources\Network Drive Warning.png" />
+    <None Include="Resources\Network Drive Stop.png" />
+    <None Include="Resources\Network Drive Search.png" />
+    <None Include="Resources\Network Drive Restricted.png" />
+    <None Include="Resources\Network Drive Information.png" />
+    <None Include="Resources\Network Drive Error.png" />
+    <None Include="Resources\Network Drive Delete.png" />
+    <None Include="Resources\Network Drive Check.png" />
+    <None Include="Resources\Network Drive Add.png" />
+    <None Include="Resources\Navigation Up.png" />
+    <None Include="Resources\Navigation Up Right.png" />
+    <None Include="Resources\Navigation Up Right 2.png" />
+    <None Include="Resources\Navigation Up Left.png" />
+    <None Include="Resources\Navigation Up Left 2.png" />
+    <None Include="Resources\Navigation Up 2.png" />
+    <None Include="Resources\Navigation Stop.png" />
+    <None Include="Resources\Navigation Stop 2.png" />
+    <None Include="Resources\Navigation Right.png" />
+    <None Include="Resources\Navigation Right 2.png" />
+    <None Include="Resources\Navigation Previous.png" />
+    <None Include="Resources\Navigation Previous 2.png" />
+    <None Include="Resources\Navigation Next.png" />
+    <None Include="Resources\Navigation Next 2.png" />
+    <None Include="Resources\Navigation Left.png" />
+    <None Include="Resources\Navigation Left 2.png" />
+    <None Include="Resources\Navigation Last.png" />
+    <None Include="Resources\Navigation Last 2.png" />
+    <None Include="Resources\Navigation First.png" />
+    <None Include="Resources\Navigation First 2.png" />
+    <None Include="Resources\Navigation Down.png" />
+    <None Include="Resources\Navigation Down Right.png" />
+    <None Include="Resources\Navigation Down Right 2.png" />
+    <None Include="Resources\Navigation Down Left.png" />
+    <None Include="Resources\Navigation Down Left 2.png" />
+    <None Include="Resources\Navigation Down 2.png" />
+    <None Include="Resources\Mouse.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Menu Main.png" />
+    <None Include="Resources\Menu 2.png" />
+    <None Include="Resources\Mail Read.png" />
+    <None Include="Resources\Mail New.png" />
+    <None Include="Resources\Lounge.png" />
+    <None Include="Resources\Lounge 2.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Logout 2.png" />
+    <None Include="Resources\Keyboard.png" />
+    <None Include="Resources\Internet Update.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Home 2.png" />
+    <None Include="Resources\History.png" />
+    <None Include="Resources\History Stop.png" />
+    <None Include="Resources\History Delete.png" />
+    <None Include="Resources\History Check.png" />
+    <None Include="Resources\History Add.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Help Index.png" />
+    <None Include="Resources\Help Index Results.png" />
+    <None Include="Resources\Help File.png" />
+    <None Include="Resources\Help File Edit.png" />
+    <None Include="Resources\Help File Edit 2.png" />
+    <None Include="Resources\Help Favorites.png" />
+    <None Include="Resources\Help Dynamic.png" />
+    <None Include="Resources\Help Contents.png" />
+    <None Include="Resources\Hard Drive.png" />
+    <None Include="Resources\Hard Drive Warning.png" />
+    <None Include="Resources\Hard Drive Unknown.png" />
+    <None Include="Resources\Hard Drive Stop.png" />
+    <None Include="Resources\Hard Drive Security.png" />
+    <None Include="Resources\Hard Drive Search.png" />
+    <None Include="Resources\Hard Drive Restricted.png" />
+    <None Include="Resources\Hard Drive Refresh.png" />
+    <None Include="Resources\Hard Drive Information.png" />
+    <None Include="Resources\Hard Drive Find.png" />
+    <None Include="Resources\Hard Drive Error.png" />
+    <None Include="Resources\Hard Drive Delete.png" />
+    <None Include="Resources\Hard Drive Configuration.png" />
+    <None Include="Resources\Hard Drive Check.png" />
+    <None Include="Resources\Hard Drive Add.png" />
+    <None Include="Resources\Group.png" />
+    <None Include="Resources\Group Warning.png" />
+    <None Include="Resources\Group Stop.png" />
+    <None Include="Resources\Group Security.png" />
+    <None Include="Resources\Group Search.png" />
+    <None Include="Resources\Group Schedule.png" />
+    <None Include="Resources\Group Restricted.png" />
+    <None Include="Resources\Group Refresh.png" />
+    <None Include="Resources\Group New.png" />
+    <None Include="Resources\Group List.png" />
+    <None Include="Resources\Group Information.png" />
+    <None Include="Resources\Group Idea.png" />
+    <None Include="Resources\Group Help.png" />
+    <None Include="Resources\Group Error.png" />
+    <None Include="Resources\Group Edit.png" />
+    <None Include="Resources\Group Edit 2.png" />
+    <None Include="Resources\Group Delete.png" />
+    <None Include="Resources\Group Configuration.png" />
+    <None Include="Resources\Group Check.png" />
+    <None Include="Resources\Group Chat.png" />
+    <None Include="Resources\Group Add.png" />
+    <None Include="Resources\Group 6.png" />
+    <None Include="Resources\Group 6 Edit.png" />
+    <None Include="Resources\Group 6 Edit 2.png" />
+    <None Include="Resources\Group 6 Chat.png" />
+    <None Include="Resources\Group 5.png" />
+    <None Include="Resources\Group 4.png" />
+    <None Include="Resources\Group 3.png" />
+    <None Include="Resources\Group 2.png" />
+    <None Include="Resources\Group 2 Warning.png" />
+    <None Include="Resources\Group 2 Stop.png" />
+    <None Include="Resources\Group 2 Security.png" />
+    <None Include="Resources\Group 2 Search.png" />
+    <None Include="Resources\Group 2 Schedule.png" />
+    <None Include="Resources\Group 2 Restricted.png" />
+    <None Include="Resources\Group 2 Refresh.png" />
+    <None Include="Resources\Group 2 New.png" />
+    <None Include="Resources\Group 2 Information.png" />
+    <None Include="Resources\Group 2 Idea.png" />
+    <None Include="Resources\Group 2 Help.png" />
+    <None Include="Resources\Group 2 Error.png" />
+    <None Include="Resources\Group 2 Delete.png" />
+    <None Include="Resources\Group 2 Configuration.png" />
+    <None Include="Resources\Group 2 Check.png" />
+    <None Include="Resources\Group 2 Add.png" />
+    <None Include="Resources\Green Up.png" />
+    <None Include="Resources\Green Forward.png" />
+    <None Include="Resources\Green Down.png" />
+    <None Include="Resources\Green Back.png" />
+    <None Include="Resources\Global Settings.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Folder Windows.png" />
+    <None Include="Resources\Folder Warning.png" />
+    <None Include="Resources\Folder View.png" />
+    <None Include="Resources\Folder Up.png" />
+    <None Include="Resources\Folder Stop.png" />
+    <None Include="Resources\Folder Security.png" />
+    <None Include="Resources\Folder Security 2.png" />
+    <None Include="Resources\Folder Search.png" />
+    <None Include="Resources\Folder Schedule.png" />
+    <None Include="Resources\Folder Restricted.png" />
+    <None Include="Resources\Folder Refresh.png" />
+    <None Include="Resources\Folder New.png" />
+    <None Include="Resources\Folder New 2.png" />
+    <None Include="Resources\Folder Network.png" />
+    <None Include="Resources\Folder Network Warning.png" />
+    <None Include="Resources\Folder Network Stop.png" />
+    <None Include="Resources\Folder Network Security.png" />
+    <None Include="Resources\Folder Network Search.png" />
+    <None Include="Resources\Folder Network Restricted.png" />
+    <None Include="Resources\Folder Network Refresh.png" />
+    <None Include="Resources\Folder Network New.png" />
+    <None Include="Resources\Folder Network Information.png" />
+    <None Include="Resources\Folder Network Find.png" />
+    <None Include="Resources\Folder Network Error.png" />
+    <None Include="Resources\Folder Network Delete.png" />
+    <None Include="Resources\Folder Network Check.png" />
+    <None Include="Resources\Folder Network Add.png" />
+    <None Include="Resources\Folder Information.png" />
+    <None Include="Resources\Folder Idea.png" />
+    <None Include="Resources\Folder Help.png" />
+    <None Include="Resources\Folder Forward.png" />
+    <None Include="Resources\Folder Favorite.png" />
+    <None Include="Resources\Folder Error.png" />
+    <None Include="Resources\Folder Edit.png" />
+    <None Include="Resources\Folder Edit 2.png" />
+    <None Include="Resources\Folder Down.png" />
+    <None Include="Resources\Folder Delete.png" />
+    <None Include="Resources\Folder Configuration.png" />
+    <None Include="Resources\Folder Check.png" />
+    <None Include="Resources\Folder Back.png" />
+    <None Include="Resources\Folder Add.png" />
+    <None Include="Resources\Folder 2.png" />
+    <None Include="Resources\Folder 2 Windows.png" />
+    <None Include="Resources\Folder 2 Warning.png" />
+    <None Include="Resources\Folder 2 Up.png" />
+    <None Include="Resources\Folder 2 Stop.png" />
+    <None Include="Resources\Folder 2 Security.png" />
+    <None Include="Resources\Folder 2 Search.png" />
+    <None Include="Resources\Folder 2 Restricted.png" />
+    <None Include="Resources\Folder 2 Refresh.png" />
+    <None Include="Resources\Folder 2 New.png" />
+    <None Include="Resources\Folder 2 Network Stop.png" />
+    <None Include="Resources\Folder 2 Network Search.png" />
+    <None Include="Resources\Folder 2 Network Restricted.png" />
+    <None Include="Resources\Folder 2 Network Refresh.png" />
+    <None Include="Resources\Folder 2 Network New.png" />
+    <None Include="Resources\Folder 2 Network Informatio.png" />
+    <None Include="Resources\Folder 2 Network Help.png" />
+    <None Include="Resources\Folder 2 Network Error.png" />
+    <None Include="Resources\Folder 2 Network Check.png" />
+    <None Include="Resources\Folder 2 Network Add.png" />
+    <None Include="Resources\Folder 2 Information.png" />
+    <None Include="Resources\Folder 2 Help.png" />
+    <None Include="Resources\Folder 2 Forward.png" />
+    <None Include="Resources\Folder 2 Error.png" />
+    <None Include="Resources\Folder 2 Edit.png" />
+    <None Include="Resources\Folder 2 Edit 2.png" />
+    <None Include="Resources\Folder 2 Down.png" />
+    <None Include="Resources\Folder 2 Delete.png" />
+    <None Include="Resources\Folder 2 Configuration.png" />
+    <None Include="Resources\Folder 2 Check.png" />
+    <None Include="Resources\Folder 2 Backward.png" />
+    <None Include="Resources\Folder 2 Add.png" />
+    <None Include="Resources\Floppy Drive.png" />
+    <None Include="Resources\Floppy Drive Warning.png" />
+    <None Include="Resources\Floppy Drive Unknown.png" />
+    <None Include="Resources\Floppy Drive Stop.png" />
+    <None Include="Resources\Floppy Drive Search.png" />
+    <None Include="Resources\Floppy Drive Restricted.png" />
+    <None Include="Resources\Floppy Drive Refresh.png" />
+    <None Include="Resources\Floppy Drive New.png" />
+    <None Include="Resources\Floppy Drive Information.png" />
+    <None Include="Resources\Floppy Drive Error.png" />
+    <None Include="Resources\Floppy Drive Delete.png" />
+    <None Include="Resources\Floppy Drive Configuration.png" />
+    <None Include="Resources\Floppy Drive Check.png" />
+    <None Include="Resources\Floppy Drive Add.png" />
+    <None Include="Resources\Find.png" />
+    <None Include="Resources\Find Warning.png" />
+    <None Include="Resources\Find Text.png" />
+    <None Include="Resources\Find Restricted.png" />
+    <None Include="Resources\Find Replace.png" />
+    <None Include="Resources\Find Previous.png" />
+    <None Include="Resources\Find Next.png" />
+    <None Include="Resources\Find Information.png" />
+    <None Include="Resources\Find Error.png" />
+    <None Include="Resources\Find Delete.png" />
+    <None Include="Resources\Find Check.png" />
+    <None Include="Resources\Find Add.png" />
+    <None Include="Resources\File Documents.png" />
+    <None Include="Resources\File Documents Warning.png" />
+    <None Include="Resources\File Documents Stop.png" />
+    <None Include="Resources\File Documents Search.png" />
+    <None Include="Resources\File Documents Restricted.png" />
+    <None Include="Resources\File Documents Refresh.png" />
+    <None Include="Resources\File Documents New.png" />
+    <None Include="Resources\File Documents Information.png" />
+    <None Include="Resources\File Documents Idea.png" />
+    <None Include="Resources\File Documents Help.png" />
+    <None Include="Resources\File Documents Error.png" />
+    <None Include="Resources\File Documents Edit.png" />
+    <None Include="Resources\File Documents Delete.png" />
+    <None Include="Resources\File Documents Check.png" />
+    <None Include="Resources\File Documents Add.png" />
+    <None Include="Resources\Fax.png" />
+    <None Include="Resources\Fax Warning.png" />
+    <None Include="Resources\Fax Unknown.png" />
+    <None Include="Resources\Fax Stop.png" />
+    <None Include="Resources\Fax Start.png" />
+    <None Include="Resources\Fax Search.png" />
+    <None Include="Resources\Fax Schedule.png" />
+    <None Include="Resources\Fax Restricted.png" />
+    <None Include="Resources\Fax Refresh.png" />
+    <None Include="Resources\Fax New.png" />
+    <None Include="Resources\Fax Information.png" />
+    <None Include="Resources\Fax Error.png" />
+    <None Include="Resources\Fax Disconnected.png" />
+    <None Include="Resources\Fax Delete.png" />
+    <None Include="Resources\Fax Connected.png" />
+    <None Include="Resources\Fax Configuration.png" />
+    <None Include="Resources\Fax Check.png" />
+    <None Include="Resources\Fax Add.png" />
+    <None Include="Resources\Favorites.png" />
+    <None Include="Resources\Favorites Search.png" />
+    <None Include="Resources\Favorites New.png" />
+    <None Include="Resources\Favorites Information.png" />
+    <None Include="Resources\Favorites Edit.png" />
+    <None Include="Resources\Favorites Delete.png" />
+    <None Include="Resources\Favorites Check.png" />
+    <None Include="Resources\Favorites Add.png" />
+    <None Include="Resources\Favorite New.png" />
+    <None Include="Resources\Favorite Information.png" />
+    <None Include="Resources\Favorite History.png" />
+    <None Include="Resources\Favorite Delete.png" />
+    <None Include="Resources\Favorite Check.png" />
+    <None Include="Resources\Favorite Add.png" />
+    <None Include="Resources\Expand.png" />
+    <None Include="Resources\Expand Vertical.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Email Send.png" />
+    <None Include="Resources\Email Read.png" />
+    <None Include="Resources\Email New.png" />
+    <None Include="Resources\Email Edit.png" />
+    <None Include="Resources\Email Edit 2.png" />
+    <None Include="Resources\DVD.png" />
+    <None Include="Resources\DVD Burner.png" />
+    <None Include="Resources\Drive USB.png" />
+    <None Include="Resources\Drive USB Warning.png" />
+    <None Include="Resources\Drive USB Unknown.png" />
+    <None Include="Resources\Drive USB Stop.png" />
+    <None Include="Resources\Drive USB Start.png" />
+    <None Include="Resources\Drive USB Search.png" />
+    <None Include="Resources\Drive USB Schedule.png" />
+    <None Include="Resources\Drive USB Restricted.png" />
+    <None Include="Resources\Drive USB Refresh.png" />
+    <None Include="Resources\Drive USB Information.png" />
+    <None Include="Resources\Drive USB Error.png" />
+    <None Include="Resources\Drive USB Disconnected.png" />
+    <None Include="Resources\Drive USB Delete.png" />
+    <None Include="Resources\Drive USB Connected.png" />
+    <None Include="Resources\Drive USB Connect.png" />
+    <None Include="Resources\Drive USB Configuration.png" />
+    <None Include="Resources\Drive USB Check.png" />
+    <None Include="Resources\Drive USB Add.png" />
+    <None Include="Resources\Drive DVD.png" />
+    <None Include="Resources\Drive DVD Warning.png" />
+    <None Include="Resources\Drive DVD View.png" />
+    <None Include="Resources\Drive DVD Stop.png" />
+    <None Include="Resources\Drive DVD Start.png" />
+    <None Include="Resources\Drive DVD Search.png" />
+    <None Include="Resources\Drive DVD Schedule.png" />
+    <None Include="Resources\Drive DVD Restricted.png" />
+    <None Include="Resources\Drive DVD Information.png" />
+    <None Include="Resources\Drive DVD Error.png" />
+    <None Include="Resources\Drive DVD Disconnected.png" />
+    <None Include="Resources\Drive DVD Configuration.png" />
+    <None Include="Resources\Drive DVD Check.png" />
+    <None Include="Resources\Drive DVD Burner.png" />
+    <None Include="Resources\Drive DVD Burner Warning.png" />
+    <None Include="Resources\Drive DVD Burner Stop.png" />
+    <None Include="Resources\Drive DVD Burner Start.png" />
+    <None Include="Resources\Drive DVD Burner Schedule.png" />
+    <None Include="Resources\Drive DVD Burner Information.png" />
+    <None Include="Resources\Drive DVD Burner Error.png" />
+    <None Include="Resources\Drive DVD Burner Disabled.png" />
+    <None Include="Resources\Drive DVD Burner Delete.png" />
+    <None Include="Resources\Drive DVD Burner Configuration.png" />
+    <None Include="Resources\Drive DVD Burner Check.png" />
+    <None Include="Resources\Drive DVD Add.png" />
+    <None Include="Resources\Drive CD.png" />
+    <None Include="Resources\Drive CD Warning.png" />
+    <None Include="Resources\Drive CD View.png" />
+    <None Include="Resources\Drive CD Stop.png" />
+    <None Include="Resources\Drive CD Start.png" />
+    <None Include="Resources\Drive CD Schedule.png" />
+    <None Include="Resources\Drive CD Restricted.png" />
+    <None Include="Resources\Drive CD Information.png" />
+    <None Include="Resources\Drive CD Error.png" />
+    <None Include="Resources\Drive CD Delete.png" />
+    <None Include="Resources\Drive CD Connected.png" />
+    <None Include="Resources\Drive CD Configuration.png" />
+    <None Include="Resources\Drive CD Check.png" />
+    <None Include="Resources\Drive CD Burner.png" />
+    <None Include="Resources\Drive CD Burner Warning.png" />
+    <None Include="Resources\Drive CD Burner Stop.png" />
+    <None Include="Resources\Drive CD Burner Start.png" />
+    <None Include="Resources\Drive CD Burner Schedule.png" />
+    <None Include="Resources\Drive CD Burner Information.png" />
+    <None Include="Resources\Drive CD Burner Error.png" />
+    <None Include="Resources\Drive CD Burner Disabled.png" />
+    <None Include="Resources\Drive CD Burner Delete.png" />
+    <None Include="Resources\Drive CD Burner Check.png" />
+    <None Include="Resources\Drive CD Burner Add.png" />
+    <None Include="Resources\Drive CD Burner 2.png" />
+    <None Include="Resources\Drive CD Add.png" />
+    <None Include="Resources\Drive CD 2.png" />
+    <None Include="Resources\Download.png" />
+    <None Include="Resources\Download Warning.png" />
+    <None Include="Resources\Download Stop.png" />
+    <None Include="Resources\Download Secure.png" />
+    <None Include="Resources\Download Restricted.png" />
+    <None Include="Resources\Download Refresh.png" />
+    <None Include="Resources\Download New.png" />
+    <None Include="Resources\Download Mail.png" />
+    <None Include="Resources\Download Information.png" />
+    <None Include="Resources\Download Help.png" />
+    <None Include="Resources\Download Forbidden.png" />
+    <None Include="Resources\Download Error.png" />
+    <None Include="Resources\Download 2.png" />
+    <None Include="Resources\Documents.png" />
+    <None Include="Resources\Documents Warning.png" />
+    <None Include="Resources\Documents Up.png" />
+    <None Include="Resources\Documents Timestamp.png" />
+    <None Include="Resources\Documents Stop.png" />
+    <None Include="Resources\Documents Security.png" />
+    <None Include="Resources\Documents Search.png" />
+    <None Include="Resources\Documents Restricted.png" />
+    <None Include="Resources\Documents Refresh.png" />
+    <None Include="Resources\Documents Refresh 2.png" />
+    <None Include="Resources\Documents New.png" />
+    <None Include="Resources\Documents Information.png" />
+    <None Include="Resources\Documents Idea.png" />
+    <None Include="Resources\Documents Help.png" />
+    <None Include="Resources\Documents Forward.png" />
+    <None Include="Resources\Documents Favorite.png" />
+    <None Include="Resources\Documents Error.png" />
+    <None Include="Resources\Documents Edit.png" />
+    <None Include="Resources\Documents Edit 2.png" />
+    <None Include="Resources\Documents Down.png" />
+    <None Include="Resources\Documents Delete.png" />
+    <None Include="Resources\Documents Configuration.png" />
+    <None Include="Resources\Documents Check-Out.png" />
+    <None Include="Resources\Documents Check-in.png" />
+    <None Include="Resources\Documents Check.png" />
+    <None Include="Resources\Documents Check Out.png" />
+    <None Include="Resources\Documents Check in.png" />
+    <None Include="Resources\Documents Back.png" />
+    <None Include="Resources\Documents Add.png" />
+    <None Include="Resources\Document.png" />
+    <None Include="Resources\Document Warning.png" />
+    <None Include="Resources\Document Up.png" />
+    <None Include="Resources\Document Timestamp.png" />
+    <None Include="Resources\Document Security.png" />
+    <None Include="Resources\Document Search.png" />
+    <None Include="Resources\Document Restricted.png" />
+    <None Include="Resources\Document Refresh.png" />
+    <None Include="Resources\Document Refresh 2.png" />
+    <None Include="Resources\Document New.png" />
+    <None Include="Resources\Document Information.png" />
+    <None Include="Resources\Document History.png" />
+    <None Include="Resources\Document Forward.png" />
+    <None Include="Resources\Document Favorite.png" />
+    <None Include="Resources\Document Error.png" />
+    <None Include="Resources\Document Edit.png" />
+    <None Include="Resources\Document Edit 2.png" />
+    <None Include="Resources\Document Down.png" />
+    <None Include="Resources\Document Delete.png" />
+    <None Include="Resources\Document Configuration.png" />
+    <None Include="Resources\Document Check-Out.png" />
+    <None Include="Resources\Document Check-in.png" />
+    <None Include="Resources\Document Check.png" />
+    <None Include="Resources\Document Check Out.png" />
+    <None Include="Resources\Document Check in.png" />
+    <None Include="Resources\Document Back.png" />
+    <None Include="Resources\Document Attach.png" />
+    <None Include="Resources\Document Add.png" />
+    <None Include="Resources\Document 2.png" />
+    <None Include="Resources\Document 2 Warning.png" />
+    <None Include="Resources\Document 2 Up.png" />
+    <None Include="Resources\Document 2 Stop.png" />
+    <None Include="Resources\Document 2 Search.png" />
+    <None Include="Resources\Document 2 Restricted.png" />
+    <None Include="Resources\Document 2 Refresh.png" />
+    <None Include="Resources\Document 2 New.png" />
+    <None Include="Resources\Document 2 Information.png" />
+    <None Include="Resources\Document 2 Information 2.png" />
+    <None Include="Resources\Document 2 Help.png" />
+    <None Include="Resources\Document 2 Error.png" />
+    <None Include="Resources\Document 2 Edit.png" />
+    <None Include="Resources\Document 2 Edit 2.png" />
+    <None Include="Resources\Document 2 Delete.png" />
+    <None Include="Resources\Document 2 Configuration.png" />
+    <None Include="Resources\Document 2 Check.png" />
+    <None Include="Resources\Document 2 Back.png" />
+    <None Include="Resources\Document 2 Attach.png" />
+    <None Include="Resources\Document 2 Add.png" />
+    <None Include="Resources\Display.png" />
+    <None Include="Resources\Display Zoom Out.png" />
+    <None Include="Resources\Display Zoom In.png" />
+    <None Include="Resources\Display Warning.png" />
+    <None Include="Resources\Display Stop.png" />
+    <None Include="Resources\Display Search.png" />
+    <None Include="Resources\Display Restricted.png" />
+    <None Include="Resources\Display Refresh.png" />
+    <None Include="Resources\Display Information.png" />
+    <None Include="Resources\Display History.png" />
+    <None Include="Resources\Display Help.png" />
+    <None Include="Resources\Display Error.png" />
+    <None Include="Resources\Display Delete.png" />
+    <None Include="Resources\Display Configuration.png" />
+    <None Include="Resources\Display Check.png" />
+    <None Include="Resources\Display Add.png" />
+    <None Include="Resources\Disapprove.png" />
+    <None Include="Resources\Dice.png" />
+    <None Include="Resources\Dice 2.png" />
+    <None Include="Resources\Desktop.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Contact.png" />
+    <None Include="Resources\Contact Warning.png" />
+    <None Include="Resources\Contact Stop.png" />
+    <None Include="Resources\Contact Search.png" />
+    <None Include="Resources\Contact Restricted.png" />
+    <None Include="Resources\Contact New.png" />
+    <None Include="Resources\Contact New 2.png" />
+    <None Include="Resources\Contact Information.png" />
+    <None Include="Resources\Contact Error.png" />
+    <None Include="Resources\Contact Edit.png" />
+    <None Include="Resources\Contact Edit 2.png" />
+    <None Include="Resources\Contact Delete.png" />
+    <None Include="Resources\Contact Check.png" />
+    <None Include="Resources\Contact Add.png" />
+    <None Include="Resources\Contact 3.png" />
+    <None Include="Resources\Contact 2.png" />
+    <None Include="Resources\Contact 2 Warning.png" />
+    <None Include="Resources\Contact 2 Stop.png" />
+    <None Include="Resources\Contact 2 Search.png" />
+    <None Include="Resources\Contact 2 Restricted.png" />
+    <None Include="Resources\Contact 2 Refresh.png" />
+    <None Include="Resources\Contact 2 New.png" />
+    <None Include="Resources\Contact 2 Information.png" />
+    <None Include="Resources\Contact 2 Error.png" />
+    <None Include="Resources\Contact 2 Edit.png" />
+    <None Include="Resources\Contact 2 Edit 2.png" />
+    <None Include="Resources\Contact 2 Delete.png" />
+    <None Include="Resources\Contact 2 Check.png" />
+    <None Include="Resources\Contact 2 Add.png" />
+    <None Include="Resources\Connection.png" />
+    <None Include="Resources\Connection Warning.png" />
+    <None Include="Resources\Connection Stop.png" />
+    <None Include="Resources\Connection Start.png" />
+    <None Include="Resources\Connection Security.png" />
+    <None Include="Resources\Connection Search.png" />
+    <None Include="Resources\Connection Schedule.png" />
+    <None Include="Resources\Connection Restricted.png" />
+    <None Include="Resources\Connection Refresh.png" />
+    <None Include="Resources\Connection New.png" />
+    <None Include="Resources\Connection Information.png" />
+    <None Include="Resources\Connection Help.png" />
+    <None Include="Resources\Connection Error.png" />
+    <None Include="Resources\Connection Disabled.png" />
+    <None Include="Resources\Connection Delete.png" />
+    <None Include="Resources\Connection Configuration.png" />
+    <None Include="Resources\Connection Check.png" />
+    <None Include="Resources\Connection Add.png" />
+    <None Include="Resources\Connection Active.png" />
+    <None Include="Resources\Collapse.png" />
+    <None Include="Resources\Collapse Vertical.png" />
+    <None Include="Resources\Clipboard.png" />
+    <None Include="Resources\Clipboard Zoom Out.png" />
+    <None Include="Resources\Clipboard Zoom In.png" />
+    <None Include="Resources\Clipboard Warning.png" />
+    <None Include="Resources\Clipboard View.png" />
+    <None Include="Resources\Clipboard Stop.png" />
+    <None Include="Resources\Clipboard Search.png" />
+    <None Include="Resources\Clipboard Restricted.png" />
+    <None Include="Resources\Clipboard Refresh.png" />
+    <None Include="Resources\Clipboard New.png" />
+    <None Include="Resources\Clipboard Information.png" />
+    <None Include="Resources\Clipboard History.png" />
+    <None Include="Resources\Clipboard Help.png" />
+    <None Include="Resources\Clipboard Error.png" />
+    <None Include="Resources\Clipboard Edit.png" />
+    <None Include="Resources\Clipboard Edit 2.png" />
+    <None Include="Resources\Clipboard Delete.png" />
+    <None Include="Resources\Clipboard Configuration.png" />
+    <None Include="Resources\Clipboard Check.png" />
+    <None Include="Resources\Clipboard Add.png" />
+    <None Include="Resources\Chat.png" />
+    <None Include="Resources\Chat 2.png" />
+    <None Include="Resources\Chart Wave.png" />
+    <None Include="Resources\Chart Pie.png" />
+    <None Include="Resources\Chart Pie Zoom.png" />
+    <None Include="Resources\Chart Line.png" />
+    <None Include="Resources\Chart Dots.png" />
+    <None Include="Resources\Chart Column.png" />
+    <None Include="Resources\Chart Bar.png" />
+    <None Include="Resources\Chart Bar 2.png" />
+    <None Include="Resources\CardHolder.png" />
+    <None Include="Resources\CardHolder 2.png" />
+    <None Include="Resources\Camera.png" />
+    <None Include="Resources\Camera Warning.png" />
+    <None Include="Resources\Camera USB.png" />
+    <None Include="Resources\Camera Information.png" />
+    <None Include="Resources\Camera Error.png" />
+    <None Include="Resources\Camera Check.png" />
+    <None Include="Resources\Calender.png" />
+    <None Include="Resources\Calender Zoom Out.png" />
+    <None Include="Resources\Calender Zoom In.png" />
+    <None Include="Resources\Calender Time.png" />
+    <None Include="Resources\Calender Restricted.png" />
+    <None Include="Resources\Calender New.png" />
+    <None Include="Resources\Calender Information.png" />
+    <None Include="Resources\Calender Forward.png" />
+    <None Include="Resources\Calender Delete.png" />
+    <None Include="Resources\Calender Check.png" />
+    <None Include="Resources\Calender Back.png" />
+    <None Include="Resources\Calender Add.png" />
+    <None Include="Resources\Calender 31 Day.png" />
+    <None Include="Resources\Calender 7 Week.png" />
+    <None Include="Resources\Calender 5 Week.png" />
+    <None Include="Resources\Calender 1 Week.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\Calendar Warning.png" />
+    <None Include="Resources\Calendar Stop.png" />
+    <None Include="Resources\Calendar Search.png" />
+    <None Include="Resources\Calendar Restricted.png" />
+    <None Include="Resources\Calendar Refresh.png" />
+    <None Include="Resources\Calendar New.png" />
+    <None Include="Resources\Calendar Information.png" />
+    <None Include="Resources\Calendar Information 2.png" />
+    <None Include="Resources\Calendar Help.png" />
+    <None Include="Resources\Calendar Error.png" />
+    <None Include="Resources\Calendar Edit.png" />
+    <None Include="Resources\Calendar Edit 2.png" />
+    <None Include="Resources\Calendar Delete.png" />
+    <None Include="Resources\Calendar Check.png" />
+    <None Include="Resources\Calendar Add.png" />
+    <None Include="Resources\Bulb On.png" />
+    <None Include="Resources\Bulb Off.png" />
+    <None Include="Resources\Bulb Idea.png" />
+    <None Include="Resources\Bulb Electric.png" />
+    <None Include="Resources\Bar Chart.png" />
+    <None Include="Resources\Bar Chart 5.png" />
+    <None Include="Resources\Bar Chart 4.png" />
+    <None Include="Resources\Bar Chart 3.png" />
+    <None Include="Resources\Bar Chart 2.png" />
+    <None Include="Resources\Bar Chart 2 Stop.png" />
+    <None Include="Resources\Bar Chart 2 Analysis.png" />
+    <None Include="Resources\Approve.png" />
+    <None Include="Resources\window_warning.png" />
+    <None Include="Resources\stockbroker2.png" />
+    <None Include="Resources\platform_truck.png" />
+    <None Include="Resources\brickwall.png" />
+    <None Include="Resources\chinaz35.ico" />
+    <None Include="Resources\chinaz34.ico" />
+    <None Include="Resources\chinaz33.ico" />
+    <None Include="Resources\chinaz32.ico" />
+    <None Include="Resources\chinaz31.ico" />
+    <None Include="Resources\chinaz30.ico" />
+    <None Include="Resources\chinaz29.ico" />
+    <None Include="Resources\chinaz28.ico" />
+    <None Include="Resources\chinaz27.ico" />
+    <None Include="Resources\chinaz26.ico" />
+    <None Include="Resources\chinaz25.ico" />
+    <None Include="Resources\chinaz24.ico" />
+    <None Include="Resources\chinaz23.ico" />
+    <None Include="Resources\chinaz22.ico" />
+    <None Include="Resources\chinaz21.ico" />
+    <None Include="Resources\chinaz20.ico" />
+    <None Include="Resources\chinaz19.ico" />
+    <None Include="Resources\chinaz18.ico" />
+    <None Include="Resources\chinaz17.ico" />
+    <None Include="Resources\chinaz16.ico" />
+    <None Include="Resources\chinaz15.ico" />
+    <None Include="Resources\chinaz14.ico" />
+    <None Include="Resources\chinaz13.ico" />
+    <None Include="Resources\chinaz12.ico" />
+    <None Include="Resources\chinaz11.ico" />
+    <None Include="Resources\chinaz10.ico" />
+    <None Include="Resources\chinaz9.ico" />
+    <None Include="Resources\chinaz8.ico" />
+    <None Include="Resources\chinaz7.ico" />
+    <None Include="Resources\chinaz6.ico" />
+    <None Include="Resources\chinaz5.ico" />
+    <None Include="Resources\chinaz4.ico" />
+    <None Include="Resources\chinaz3.ico" />
+    <None Include="Resources\chinaz2.ico" />
+    <None Include="Resources\chinaz1.ico" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\Group 2 Search1.jpg" />
+    <None Include="Resources\Group 21.jpg" />
+    <None Include="Resources\Group1.jpg" />
+    <None Include="Resources\Favorites1.jpg" />
+    <None Include="Resources\Favorite History1.jpg" />
+    <None Include="Resources\Email Send1.jpg" />
+    <None Include="Resources\Bar Chart 2 Stop1.jpg" />
+    <None Include="Resources\Approve1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 с пакетом обновления 1 %28SP1%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

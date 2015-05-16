@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5b5f4600df01463a906d8431e6efce0f" Name="Diagram1">
+        <EntityTypeShape EntityType="shopModel.Bill" Width="1.5" PointX="6.375" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.Buyer" Width="1.5" PointX="5.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.Cathegory" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.CathegoryProduct" Width="1.5" PointX="6.375" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.Producer" Width="1.5" PointX="0.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.Product" Width="1.5" PointX="2.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.ProductProducer" Width="1.5" PointX="3.625" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.Sales" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shopModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="shopModel.FK_Bill_Buyer" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_Bill_Sales" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_CathegoryProduct_CathegoryProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_CathegoryProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_ProductProducer_Producer" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_ProductProducer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="shopModel.FK_Sales_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

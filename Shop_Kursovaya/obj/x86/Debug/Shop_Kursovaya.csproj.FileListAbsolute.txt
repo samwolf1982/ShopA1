@@ -1,0 +1,173 @@
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csproj.GenerateResource.Cache
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.TrustInfo.xml
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormAutentification.resources
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+D:\Dropbox\Dropbox\programms\C#\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.manifest
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.application
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csproj.GenerateResource.Cache
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.TrustInfo.xml
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe.manifest
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.application
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csprojResolveAssemblyReference.cache
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+C:\Users\Evgen\Downloads\Shop_Kursovaya\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csproj.GenerateResource.Cache
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.TrustInfo.xml
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.TrustInfo.xml
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya (1)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.application
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.TrustInfo.xml
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe.manifest
+D:\Dropbox\Dropbox\Контрольные\4курс\Курсовой(магазин)\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.application
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csproj.GenerateResource.Cache
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\shop.mdf
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\shop_log.ldf
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\EntityFramework.dll
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\EntityFramework.xml
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sam\Downloads\Shop\Shop_Kursovaya\Shop_Kursovaya\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe.config
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.exe
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.pdb
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\shop.mdf
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\shop_log.ldf
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.exe
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\Shop_Kursovaya.pdb
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\EntityFramework.dll
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\EntityFramework.xml
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.AutentificationForm.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.CathegoryForm.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ClientEditingForm.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.financialReportEveryDay.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditor.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormEditorProperties.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.FormARM.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProducerEditingForm.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.ProductEditingform.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.Properties.Resources.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.reportProductMaxSalese.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.repottProductMinimum.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.SalesEditingForm.resources
+C:\Users\Sam\Downloads\Shop\d\ShopA1\Shop_Kursovaya\obj\x86\Debug\Shop_Kursovaya.csproj.GenerateResource.Cache
